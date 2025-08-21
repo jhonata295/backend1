@@ -1,0 +1,239 @@
+type: collection.insomnia.rest/5.0
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1755777467843
+  modified: 1755777467843
+  description: ""
+collection:
+  - url: http://localhost:3000/tarefas
+    name: GET /tarefas – listar
+    meta:
+      id: req_6a6821d8d30e424f8ef55f40df2e2a53
+      created: 1755778127195
+      modified: 1755781736592
+      isPrivate: false
+      description: ""
+      sortKey: -1755778127195
+    method: GET
+    parameters:
+      - id: pair_910057633c9e4ce396400a2c8f608a04
+        name: ""
+        value: ""
+        description: ""
+        disabled: false
+    headers:
+      - name: User-Agent
+        value: insomnia/11.4.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/tarefas
+    name: POST /tarefas – criar
+    meta:
+      id: req_216cd77f0f5f45a0a1450b1f18581f7a
+      created: 1755778737460
+      modified: 1755781979609
+      isPrivate: false
+      description: ""
+      sortKey: -1755778127145
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+           "nome": "Estudar API REST",
+           "prioridade": 1,
+           "concluida": false
+        }
+    parameters:
+      - id: pair_910057633c9e4ce396400a2c8f608a04
+        name: ""
+        value: ""
+        description: ""
+        disabled: false
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.4.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/tarefas/idTarefa
+    name: GET /tarefas/{id} – por id
+    meta:
+      id: req_d78ec1786e074721beb354af2c44685c
+      created: 1755779148229
+      modified: 1755781959357
+      isPrivate: false
+      description: ""
+      sortKey: -1755778127170
+    method: GET
+    parameters:
+      - id: pair_910057633c9e4ce396400a2c8f608a04
+        name: ""
+        value: ""
+        description: ""
+        disabled: false
+    headers:
+      - name: User-Agent
+        value: insomnia/11.4.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/tarefas/1
+    name: GET /tarefas/1 – não encontrado
+    meta:
+      id: req_ec9b3809ee16420a9528ac0daaaae81d
+      created: 1755781023558
+      modified: 1755781935873
+      isPrivate: false
+      description: ""
+      sortKey: -1755778127182.5
+    method: GET
+    parameters:
+      - id: pair_910057633c9e4ce396400a2c8f608a04
+        name: ""
+        value: ""
+        description: ""
+        disabled: false
+    headers:
+      - name: User-Agent
+        value: insomnia/11.4.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/tarefas/idTarefa
+    name: PUT /tarefas/{id} – atualizar
+    meta:
+      id: req_3a93388c16364e60be64294a0e2132c3
+      created: 1755781062727
+      modified: 1755781885080
+      isPrivate: false
+      description: ""
+      sortKey: -1755778127188.75
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |
+        {
+           "nome": "Estudar API REST",
+           "prioridade": 2,
+           "concluida": true
+        }
+    parameters:
+      - id: pair_910057633c9e4ce396400a2c8f608a04
+        name: ""
+        value: ""
+        description: ""
+        disabled: false
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.4.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/tarefas/idTarefa
+    name: PATCH /tarefas/{id} – atualizar parcial
+    meta:
+      id: req_f1c39a74f139455b86d9a65d5b89f26a
+      created: 1755781164895
+      modified: 1755781783346
+      isPrivate: false
+      description: ""
+      sortKey: -1755778127191.875
+    method: PATCH
+    body:
+      mimeType: application/json
+      text: |
+        
+        {
+           "concluida": false
+        }
+    parameters:
+      - id: pair_910057633c9e4ce396400a2c8f608a04
+        name: ""
+        value: ""
+        description: ""
+        disabled: false
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.4.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/tarefas/idTarefa
+    name: DELETE /tarefas/{id} – remover
+    meta:
+      id: req_972702c0e6104cedb624319fb495cf85
+      created: 1755781288731
+      modified: 1755781756501
+      isPrivate: false
+      description: ""
+      sortKey: -1755778127193.4375
+    method: DELETE
+    parameters:
+      - id: pair_910057633c9e4ce396400a2c8f608a04
+        name: ""
+        value: ""
+        description: ""
+        disabled: false
+    headers:
+      - name: User-Agent
+        value: insomnia/11.4.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1755778008050
+    modified: 1755778008050
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1755778008040
+    modified: 1755778008040
+    isPrivate: false
