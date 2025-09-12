@@ -1,0 +1,53 @@
+{
+    "info": {
+      "name": "Prática 04 - API Tarefas",
+      "_postman_id": "12345678-aaaa-bbbb-cccc-1234567890ab",
+      "description": "Collection para testar a API REST da prática 04",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "Listar todas tarefas",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": { "raw": "http://localhost:3000/tarefas", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["tarefas"] }
+        }
+      },
+      {
+        "name": "Criar nova tarefa",
+        "request": {
+          "method": "POST",
+          "header": [{ "key": "Content-Type", "value": "application/json" }],
+          "body": { "mode": "raw", "raw": "{\n  \"nome\": \"Nova tarefa\",\n  \"concluida\": false\n}" },
+          "url": { "raw": "http://localhost:3000/tarefas", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["tarefas"] }
+        }
+      },
+      {
+        "name": "Buscar tarefa por ID",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": { "raw": "http://localhost:3000/tarefas/1", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["tarefas", "1"] }
+        }
+      },
+      {
+        "name": "Atualizar tarefa",
+        "request": {
+          "method": "PUT",
+          "header": [{ "key": "Content-Type", "value": "application/json" }],
+          "body": { "mode": "raw", "raw": "{\n  \"nome\": \"Tarefa atualizada\",\n  \"concluida\": true\n}" },
+          "url": { "raw": "http://localhost:3000/tarefas/1", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["tarefas", "1"] }
+        }
+      },
+      {
+        "name": "Remover tarefa",
+        "request": {
+          "method": "DELETE",
+          "header": [],
+          "url": { "raw": "http://localhost:3000/tarefas/1", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["tarefas", "1"] }
+        }
+      }
+    ]
+  }
+  
