@@ -1,0 +1,17 @@
+{
+  "name": "pratica05",
+  "version": "1.0.0",
+  "description": "API REST prática 5",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "jest --watchAll"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.0.0"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
